@@ -7,7 +7,7 @@
   <style>
     * {
       box-sizing: border-box;
-      font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: "Comic Neue", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     }
 
     body {
@@ -16,7 +16,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: radial-gradient(circle at top, #2b1055, #12002f);
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
       overflow: hidden;
       padding: 16px;
     }
@@ -76,6 +76,8 @@
     h1 {
       font-size: clamp(20px, 5vw, 26px);
       margin-bottom: 20px;
+      font-family: "Comic Neue", "Comic Sans MS", "Segoe UI", cursive, sans-serif;
+      font-weight: 700;
     }
 
     .buttons {
@@ -95,7 +97,14 @@
     }
 
     #yes {
-      background: #d1d1d1;
+      background: linear-gradient(135deg, #7ee8fa, #80ff72);
+      color: #083d2b;
+      font-weight: 700;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    }
+
+    #yes:hover {
+      transform: scale(1.05);
     }
 
     #no {
@@ -106,7 +115,8 @@
     #message {
       margin-top: 18px;
       min-height: 24px;
-      font-size: 15px;
+      font-size: 16px;
+      font-weight: 700;
     }
 
     @keyframes popIn {
@@ -167,10 +177,10 @@
 
     let noClicks = 0;
     const noMessages = [
-      "Ahh... How could you?!!",
-      "Okay wow, that hurt",
-      "You’re enjoying this, aren’t you?",
-      "Fine. Coffee? ☕"
+      "WHAAAAT?! 😭💔",
+      "OKAY WOW. THAT HURT. 😤",
+      "YOU’RE ENJOYING THIS, AREN’T YOU?! 😈",
+      "FINE. COFFEE? ☕💌"
     ];
 
     yesBtn.addEventListener('mouseenter', () => {
